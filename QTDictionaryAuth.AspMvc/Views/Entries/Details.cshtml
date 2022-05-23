@@ -1,0 +1,18 @@
+﻿@model QTDictionaryAuth.AspMvc.Models.EntryModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>EntryModel</h4>
+    <hr />
+    
+    @await Html.PartialAsync("_DisplayModel", Model)
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    <a asp-action="Index">Back to List</a>
+</div>
